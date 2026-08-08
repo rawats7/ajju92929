@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AJJU BHAI | Premium Signals</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1414070073932491');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1414070073932491&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+    <style>
+        /* ── Reset ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0a0603;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 16px;
+            position: relative;
+        }
+
+        /* ── Background glow ── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 70% 45% at 50% 12%, rgba(255, 90, 20, 0.30) 0%, transparent 62%),
+                radial-gradient(circle 55% at 12% 88%, rgba(200, 40, 10, 0.22) 0%, transparent 58%),
+                radial-gradient(circle 50% at 90% 80%, rgba(255, 140, 30, 0.18) 0%, transparent 55%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── Card ── */
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            background: linear-gradient(168deg, #1c0d05 0%, #120703 55%, #1a0a04 100%);
+            border: 1px solid rgba(255, 110, 30, 0.28);
+            border-radius: 24px;
+            padding: 28px 22px 26px;
+            z-index: 2;
+            box-shadow:
+                0 22px 60px rgba(255, 80, 10, 0.20),
+                0 4px 20px rgba(0, 0, 0, 0.55),
+                inset 0 1px 0 rgba(255, 170, 90, 0.10);
+            animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── Avatar ── */
+        .avatar-wrap {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 18px;
+        }
+
+        .avatar-ring {
+            position: absolute;
+            inset: -4px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #ff8a1e, #ff4d10 55%, #c92a08);
+            opacity: 0.9;
+            animation: glow 2.6s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%,
+            100% {
+                box-shadow: 0 0 22px rgba(255, 90, 20, 0.45);
+            }
+            50% {
+                box-shadow: 0 0 38px rgba(255, 120, 30, 0.75);
+            }
+        }
+
+        .avatar {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            background-image: url('https://i.postimg.cc/Pf9wWJ1Y/IMG-20260731-210042-800.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #0a0301;
+        }
+
+        /* ── Name ── */
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 42px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            line-height: 1;
+            text-align: center;
+            margin-bottom: 2px;
+            background: linear-gradient(180deg, #ffd9b0 0%, #ff6a1c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 10px rgba(255, 90, 20, 0.35));
+        }
+
+        .divider {
+            width: 50px;
+            height: 2px;
+            margin: 10px auto 14px;
+            background: linear-gradient(90deg, transparent, #ff6a1c, transparent);
+            border-radius: 2px;
+        }
+
+        .tagline {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffb27a;
+            text-align: center;
+            letter-spacing: 0.3px;
+            margin-bottom: 20px;
+        }
+
+        /* ── CTA Button ── */
+        .cta {
+            display: block;
+            width: 100%;
+            position: relative;
+            background: linear-gradient(135deg, #ff7a18 0%, #ff5a10 50%, #e23c06 100%);
+            color: #fff;
+            padding: 20px 16px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 19px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid rgba(255, 190, 140, 0.35);
+            cursor: pointer;
+            box-shadow: 0 12px 30px rgba(255, 80, 10, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transition: transform 0.14s ease;
+            animation: pulse 2.4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                box-shadow: 0 12px 30px rgba(255, 80, 10, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 14px 40px rgba(255, 110, 30, 0.62), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+            }
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -80%;
+            width: 55%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+            animation: sweep 3s ease-in-out infinite;
+        }
+
+        @keyframes sweep {
+            0% {
+                left: -80%;
+            }
+            55%,
+            100% {
+                left: 130%;
+            }
+        }
+
+        .cta:active {
+            transform: scale(0.97);
+        }
+
+        .cta-icon {
+            margin-right: 8px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+
+        /* ── Timer ── */
+        .timer-box {
+            margin-top: 18px;
+            padding: 14px 12px;
+            border: 1px solid rgba(255, 110, 30, 0.28);
+            border-radius: 14px;
+            background: rgba(255, 90, 20, 0.05);
+            text-align: center;
+        }
+
+        .timer-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ff8a3c;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .timer-display {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .timer-display span {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #b89684;
+            letter-spacing: 1px;
+            margin-left: 4px;
+        }
+
+        /* ── Responsive tweaks ── */
+        @media (max-width: 440px) {
+            .card {
+                padding: 22px 16px 20px;
+            }
+            h1 {
+                font-size: 34px;
+            }
+            .avatar-wrap {
+                width: 110px;
+                height: 110px;
+            }
+            .cta {
+                font-size: 17px;
+                padding: 18px 14px;
+            }
+            .timer-display {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Avatar -->
+        <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar"></div>
+        </div>
+
+        <!-- Name -->
+        <h1>AJJU BHAI</h1>
+        <div class="divider"></div>
+        <div class="tagline">Daily premium signals, straight to your Telegram.</div>
+
+        <!-- CTA Button -->
+        <a class="cta" href="https://t.me/+d-HbjrdPQw81MDI1" id="joinBtn">
+            <span class="cta-icon">✈</span> JOIN TELEGRAM
+        </a>
+
+        <!-- Timer -->
+        <div class="timer-box">
+            <div class="timer-label">⏳ Offer Ends In</div>
+            <div class="timer-display" id="timerDisplay">30 <span>sec</span></div>
+        </div>
+    </div>
+
+    <script>
+        
+        var endTime = Date.now() + 500 * 1000;
+        var timerEl = document.getElementById('timerDisplay');
+
+        function updateTimer() {
+            var diff = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
+            timerEl.innerHTML = diff + ' <span>sec</span>';
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+
+       
+    </script>
+
+</body>
+</html>
